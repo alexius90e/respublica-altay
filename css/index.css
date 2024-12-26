@@ -119,7 +119,8 @@ img {
 @media (max-width: 576px) {
   .button {
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 150%;
   }
 }
@@ -525,6 +526,7 @@ img {
 @media (max-width: 576px) {
   .codex__info-title {
     font-size: 24px;
+    line-height: 130%;
   }
 }
 .codex__info-text {
@@ -669,6 +671,78 @@ img {
 }
 @media (max-width: 768px) {
   .open-new__more .button {
+    max-width: none;
+  }
+}
+
+.attestation {
+  margin: 0 0 156px;
+}
+@media (max-width: 1024px) {
+  .attestation {
+    margin: 0 0 80px;
+  }
+}
+@media (max-width: 576px) {
+  .attestation {
+    margin: 0 0 40px;
+  }
+}
+.attestation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 76px 68px;
+  border-radius: 40px;
+  background: url(../assets/attestation-bg.webp) center/cover no-repeat;
+}
+@media (max-width: 1440px) {
+  .attestation__wrapper {
+    padding: 60px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .attestation__wrapper {
+    padding: 40px 32px;
+  }
+}
+@media (max-width: 576px) {
+  .attestation__wrapper {
+    padding: 40px 16px;
+    border-radius: 20px;
+  }
+}
+.attestation__title {
+  flex: 0 1 842px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 117%;
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .attestation__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 576px) {
+  .attestation__title {
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
+.attestation__more {
+  flex: 0 0 320px;
+}
+@media (max-width: 768px) {
+  .attestation__more {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 768px) {
+  .attestation__more .button {
     max-width: none;
   }
 }
