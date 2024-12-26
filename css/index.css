@@ -185,9 +185,19 @@ img {
 
 .main {
   margin-top: -100px;
-  padding: 426px 0 120px;
+  padding: 0 0 120px;
   border-radius: 60px 60px 0 0;
   background-color: #ffffff;
+}
+@media (max-width: 576px) {
+  .main {
+    border-radius: 40px 40px 0 0;
+  }
+}
+@media (max-width: 576px) {
+  .main {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .first-screen {
@@ -219,6 +229,112 @@ img {
 .first-screen__title {
   max-width: 1140px;
   color: #ffffff;
+}
+
+.advices {
+  margin: 0 0 116px;
+}
+@media (max-width: 1024px) {
+  .advices {
+    margin: 0 0 80px;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .advices {
+    margin: 0 0 40px;
+  }
+}
+.advices .container {
+  position: relative;
+  height: 310px;
+}
+@media (max-width: 1024px) {
+  .advices .container {
+    height: auto;
+  }
+}
+.advices__wrapper {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .advices__wrapper {
+    position: static;
+    flex-wrap: wrap;
+  }
+}
+.advices__card {
+  position: relative;
+  flex: 0 0 calc(25% - 15px);
+  overflow: hidden;
+  border-radius: 40px;
+}
+@media (max-width: 1024px) {
+  .advices__card {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+@media (max-width: 576px) {
+  .advices__card {
+    flex: 0 0 100%;
+    border-radius: 20px;
+  }
+}
+.advices__card-figure {
+  min-height: 500px;
+  height: 100%;
+}
+@media (max-width: 1440px) {
+  .advices__card-figure {
+    min-height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .advices__card-figure {
+    min-height: 200px;
+    height: 200px;
+  }
+}
+.advices__card-figure-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.advices__card-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+}
+@media (max-width: 1440px) {
+  .advices__card-info {
+    padding: 0 20px 40px;
+  }
+}
+@media (max-width: 576px) {
+  .advices__card-info {
+    padding: 0 20px 20px;
+  }
+}
+.advices__card-info-question {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+.advices__card-info-answer {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
 }
 
 .learn-more__title {
