@@ -1,0 +1,105 @@
+.codex {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 98px 60px 80px;
+    border-radius: 40px;
+    background-color: #033958;
+
+    @include desktop {
+      padding: 60px 40px;
+    }
+
+    @include laptop {
+      flex-direction: column;
+      padding: 40px 32px 0;
+    }
+
+    @include mobile {
+      padding: 24px 16px 0;
+      border-radius: 20px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 36px;
+      display: block;
+      width: 690px;
+      aspect-ratio: 1 / 1;
+      background: url(../assets/codex.webp) center / cover no-repeat;
+      transform: translateY(-50%);
+
+      @include desktop {
+        right: 0;
+        width: 540px;
+      }
+
+      @include laptop {
+        position: static;
+        transform: none;
+
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__info {
+    flex: 0 1 calc(100% - 640px);
+
+    @include desktop {
+      flex: 0 1 calc(100% - 430px);
+    }
+
+    @include laptop {
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      margin: 0 0 28px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 117%;
+      color: #fff;
+
+      @include laptop {
+        font-size: 36px;
+      }
+
+      @include mobile {
+        font-size: 28px;
+      }
+    }
+
+    &-text {
+      margin: 0 0 54px;
+      font-weight: 400;
+      font-size: 24px;
+      color: #fff;
+
+      @include laptop {
+        margin: 0 0 34px;
+        font-size: 20px;
+      }
+
+      @include mobile {
+        margin: 0 0 24px;
+       font-size: 16px;
+      }
+    }
+
+    &-controls {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+
+      & .button {
+        @include tablet {
+          max-width: none;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,14 @@
 .learn-more {
+  margin: 0 0 129px;
+
+  @include laptop {
+    margin: 0 0 80px;
+  }
+
+  @include mobile {
+    margin: 0 0 40px;
+  }
+
   &__title {
     margin: 0;
   }
