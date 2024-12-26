@@ -25,29 +25,5 @@
   &__title {
     max-width: 1140px;
     color: #ffffff;
-
-    @include desktop {
-      font-size: 110px;
-    }
-
-    @include desktopmd {
-      font-size: 100px;
-    }
-
-    @include laptop {
-      font-size: 80px;
-    }
-
-    @include tablet {
-      font-size: 56px;
-    }
-
-    @include mobile {
-      font-size: 40px;
-    }
-
-    @include mobilesm {
-      font-size: 32px;
-    }
   }
 }
