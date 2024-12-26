@@ -435,6 +435,19 @@ img {
   }
 }
 
+.codex {
+  margin: 0 0 156px;
+}
+@media (max-width: 1024px) {
+  .codex {
+    margin: 0 0 80px;
+  }
+}
+@media (max-width: 576px) {
+  .codex {
+    margin: 0 0 40px;
+  }
+}
 .codex__wrapper {
   position: relative;
   display: flex;
@@ -511,7 +524,7 @@ img {
 }
 @media (max-width: 576px) {
   .codex__info-title {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .codex__info-text {
@@ -539,6 +552,123 @@ img {
 }
 @media (max-width: 768px) {
   .codex__info-controls .button {
+    max-width: none;
+  }
+}
+
+.open-new {
+  margin: 0 0 131px;
+}
+@media (max-width: 1024px) {
+  .open-new {
+    margin: 0 0 80px;
+  }
+}
+@media (max-width: 576px) {
+  .open-new {
+    margin: 0 0 40px;
+  }
+}
+.open-new__title {
+  margin: 0 0 41px;
+}
+@media (max-width: 1024px) {
+  .open-new__title {
+    margin: 0 0 32px;
+  }
+}
+@media (max-width: 576px) {
+  .open-new__title {
+    margin: 0 0 24px;
+  }
+}
+.open-new__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 0 44px;
+}
+@media (max-width: 1024px) {
+  .open-new__content {
+    margin: 0 0 32px;
+  }
+}
+@media (max-width: 576px) {
+  .open-new__content {
+    margin: 0 0 24px;
+  }
+}
+.open-new__card {
+  flex: 0 0 calc(33.3333333333% - 13.3333333333px);
+}
+@media (max-width: 1024px) {
+  .open-new__card {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+@media (max-width: 576px) {
+  .open-new__card {
+    flex: 1 1 100%;
+  }
+}
+.open-new__card-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 18px;
+}
+@media (max-width: 1024px) {
+  .open-new__card-figure {
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .open-new__card-figure {
+    margin-bottom: 12px;
+  }
+}
+.open-new__card-figure-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+@media (max-width: 1024px) {
+  .open-new__card-figure-image {
+    height: 240px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .open-new__card-figure-image {
+    height: 240px;
+  }
+}
+.open-new__card-title {
+  font-weight: 900;
+  font-size: 24px;
+  color: #1d1d1d;
+}
+@media (max-width: 1024px) {
+  .open-new__card-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .open-new__card-title {
+    font-size: 20px;
+  }
+}
+.open-new__more {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .open-new__more .button {
     max-width: none;
   }
 }
