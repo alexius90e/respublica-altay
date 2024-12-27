@@ -1,12 +1,14 @@
 .first-screen {
   margin-top: 80px;
   background: url(../assets/first-screen-bg.webp) center / cover no-repeat;
+  overflow: hidden;
 
   @include desktop {
     background-position: center right -400px;
   }
 
   &__content {
+    position: relative;
     padding: 190px 0 0;
     height: 880px;
     box-sizing: border-box;
@@ -21,9 +23,46 @@
       max-height: calc(100dvh - 80px);
       padding: 0;
     }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 1;
+      display: block;
+      width: 436px;
+      aspect-ratio: 436 / 610;
+      background: url(../assets/ornament.svg) center / cover no-repeat;
+      transform: translateY(-65%);
+
+      @include desktop {
+        width: 360px;
+      }
+
+      @include desktopmd {
+        width: 300px;
+      }
+
+      @include laptop {
+        width: 270px;
+        
+      }
+
+      @include tablet {
+        width: 220px;
+      }
+
+      @include mobile {
+        right: -10px;
+        width: 140px;
+      }
+    }
   }
 
   &__title {
+    position: relative;
+    z-index: 2;
     max-width: 1140px;
     color: #ffffff;
   }

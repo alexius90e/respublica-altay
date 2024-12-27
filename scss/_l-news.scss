@@ -1,6 +1,7 @@
 .news {
   margin: 0 0 147px;
-  background: url(../assets/news-bg.svg) top center / 100% no-repeat;
+  background: url(../assets/news-bg.svg) top center no-repeat;
+  background-size: auto 100%;
 
   @include laptop {
     margin: 0 0 80px;
