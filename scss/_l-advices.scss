@@ -41,11 +41,11 @@
 
     @include laptop {
       flex: 0 0 calc(100% / 2 - 20px / 2);
+      border-radius: 20px;
     }
 
     @include mobile {
       flex: 0 0 100%;
-      border-radius: 20px;
     }
 
     &-figure {
