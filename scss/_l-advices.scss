@@ -51,6 +51,7 @@
     &-figure {
       min-height: 500px;
       height: 100%;
+      transition: filter ease-in-out 0.2s;
 
       @include desktop {
         min-height: 400px;
@@ -59,6 +60,7 @@
       @include mobile {
         min-height: 200px;
         height: 200px;
+        
       }
 
       &-image {
@@ -68,6 +70,10 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+
+    &:hover &-figure {
+      filter: brightness(80%);
     }
 
     &-info {

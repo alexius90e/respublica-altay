@@ -701,6 +701,7 @@ img {
 .advices__card-figure {
   min-height: 500px;
   height: 100%;
+  transition: filter ease-in-out 0.2s;
 }
 @media (max-width: 1440px) {
   .advices__card-figure {
@@ -720,6 +721,9 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.advices__card:hover .advices__card-figure {
+  filter: brightness(80%);
 }
 .advices__card-info {
   position: absolute;
