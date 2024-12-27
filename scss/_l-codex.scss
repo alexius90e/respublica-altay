@@ -28,7 +28,7 @@
     }
 
     @include mobile {
-      padding: 24px 16px 0;
+      padding: 24px 16px 72px;
     }
 
     &::after {
@@ -106,9 +106,22 @@
       justify-content: flex-start;
       width: 100%;
 
+      @include mobile {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 24px;
+        max-width: 100%;
+      }
+
       & .button {
         @include tablet {
           max-width: none;
+          box-sizing: border-box;
+        }
+
+        @include mobile {
+          width: calc(100% - 32px);
         }
       }
     }

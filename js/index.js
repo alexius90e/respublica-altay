@@ -16,3 +16,17 @@ if (headerBurgerButton && headerNav) {
     }
   });
 }
+
+const headerNavMenuItems = document.querySelectorAll('.header__nav-menu-item');
+
+headerNavMenuItems.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    headerNavMenuItems.forEach((item) => {
+      if (item === event.currentTarget) {
+        item.classList.toggle('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  });
+});
