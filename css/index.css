@@ -132,7 +132,7 @@ img {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -468,6 +468,8 @@ img {
 }
 
 .main {
+  position: relative;
+  z-index: 10;
   margin-top: -100px;
   padding: 0 0 120px;
   border-radius: 60px 60px 0 0;
@@ -681,9 +683,8 @@ img {
 }
 
 .first-screen {
-  margin-top: 80px;
-  background: url(../assets/first-screen-bg.webp) center/cover no-repeat;
   overflow: hidden;
+  background: url(../assets/first-screen-bg.webp) center/cover no-repeat;
 }
 @media (max-width: 1440px) {
   .first-screen {
@@ -1531,4 +1532,73 @@ img {
   .law-info__more .button {
     max-width: none;
   }
+}
+
+.page-heading {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 100px;
+}
+.page-heading .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  min-height: 620px;
+}
+.page-heading__title {
+  position: relative;
+  z-index: 2;
+  max-width: 1140px;
+  color: #ffffff;
+}
+.page-heading__icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.page-heading__icon-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1440px) {
+  .page-heading__icon-image {
+    width: 360px;
+  }
+}
+@media (max-width: 1200px) {
+  .page-heading__icon-image {
+    width: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .page-heading__icon-image {
+    width: 270px;
+  }
+}
+@media (max-width: 768px) {
+  .page-heading__icon-image {
+    width: 220px;
+  }
+}
+@media (max-width: 576px) {
+  .page-heading__icon-image {
+    width: 140px;
+  }
+}
+.page-heading__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.page-heading__bg-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

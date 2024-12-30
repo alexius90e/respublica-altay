@@ -1,7 +1,6 @@
 .first-screen {
-  margin-top: 80px;
-  background: url(../assets/first-screen-bg.webp) center / cover no-repeat;
   overflow: hidden;
+  background: url(../assets/first-screen-bg.webp) center / cover no-repeat;
 
   @include desktop {
     background-position: center right -400px;
@@ -46,7 +45,6 @@
 
       @include laptop {
         width: 270px;
-        
       }
 
       @include tablet {
