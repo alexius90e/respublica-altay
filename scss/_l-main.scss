@@ -4,18 +4,25 @@
   margin-top: -100px;
   padding: 0 0 120px;
   border-radius: 60px 60px 0 0;
-  background: url(../assets/main-bg.svg) top -40px center / 2650px no-repeat;
   background-color: #ffffff;
-
-  @include desktop {
-    background-size: 1920px;
-  }
 
   @include laptop {
     border-radius: 40px 40px 0 0;
   }
 
-  @include mobile {
-    border-radius: 20px 20px 0 0;
+  &_bg {
+    background: url(../assets/main-bg.svg) top -40px center / 2650px no-repeat;
+
+    @include desktop {
+      background-size: 1920px;
+    }
+
+    @include laptop {
+      border-radius: 40px 40px 0 0;
+    }
+
+    @include mobile {
+      border-radius: 20px 20px 0 0;
+    }
   }
 }

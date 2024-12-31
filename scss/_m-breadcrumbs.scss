@@ -1,0 +1,33 @@
+.breadcrumbs {
+  &__link,
+  &__current {
+    font-weight: 400;
+    font-size: 20px;
+    color: #0470c7;
+
+    @include laptop {
+    }
+
+    @include desktop {
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px 0;
+  }
+
+  &__link {
+    &::after {
+      content: '/';
+      display: inline-block;
+      padding: 0 6px;
+      color: #747474;
+    }
+  }
+
+  &__current {
+  }
+}

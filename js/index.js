@@ -30,3 +30,26 @@ headerNavMenuItems.forEach((item) => {
     });
   });
 });
+
+////
+
+const codexControlsButtons = document.querySelectorAll('.codex-details__controls-button');
+
+const codexContent = document.querySelector('.codex-details__content');
+
+codexControlsButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    codexControlsButtons.forEach((button) => {
+      if (button !== event.currentTarget) button.classList.remove('active');
+    });
+    event.currentTarget.classList.add('active');
+
+    const buttonRules = event.currentTarget.dataset.rules;
+
+    if (buttonRules === 'full') {
+      if (codexContent) codexContent.classList.add('full');
+    } else {
+      if (codexContent) codexContent.classList.remove('full');
+    }
+  });
+});
