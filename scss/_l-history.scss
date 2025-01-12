@@ -17,9 +17,6 @@
     }
   }
 
-  &__wrapper {
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
@@ -153,7 +150,7 @@
   &__title {
     margin: 0 0 52px;
 
-    @include desktopmd {
+    @include laptop {
       margin-bottom: 48px;
     }
 

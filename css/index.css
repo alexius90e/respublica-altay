@@ -2435,7 +2435,7 @@ img {
 .history__title {
   margin: 0 0 52px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .history__title {
     margin-bottom: 48px;
   }
@@ -2454,4 +2454,106 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.history-details {
+  padding: 100px 0 72px;
+}
+@media (max-width: 1024px) {
+  .history-details {
+    padding: 40px 0 24px;
+  }
+}
+.history-details .breadcrumbs {
+  margin: 0 0 75px;
+}
+@media (max-width: 1024px) {
+  .history-details .breadcrumbs {
+    margin: 0 0 48px;
+  }
+}
+@media (max-width: 576px) {
+  .history-details .breadcrumbs {
+    margin: 0 0 32px;
+  }
+}
+.history-details__title {
+  margin: 0 0 108px;
+}
+@media (max-width: 1024px) {
+  .history-details__title {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .history-details__title {
+    margin-bottom: 48px;
+  }
+}
+.history-details__figure {
+  display: block;
+  width: 100%;
+  margin: 0 0 74px;
+  aspect-ratio: 158/60;
+}
+@media (max-width: 1024px) {
+  .history-details__figure {
+    margin-bottom: 56px;
+  }
+}
+@media (max-width: 576px) {
+  .history-details__figure {
+    margin-bottom: 48px;
+  }
+}
+.history-details__figure-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+@media (max-width: 1024px) {
+  .history-details__figure-image {
+    border-radius: 20px;
+  }
+}
+.history-details__content {
+  max-width: 1040px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #1d1d1d;
+}
+@media (max-width: 1024px) {
+  .history-details__content {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .history-details__content {
+    font-size: 14px;
+  }
+}
+.history-details__content > *:last-child {
+  margin: 0;
+}
+.history-details__content p {
+  margin: 0 0 34px;
+}
+@media (max-width: 1200px) {
+  .history-details__content p {
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .history-details__content p {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .history-details__content p {
+    margin-bottom: 16px;
+  }
 }
