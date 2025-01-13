@@ -6,9 +6,11 @@
     color: #0470c7;
 
     @include laptop {
+      font-size: 16px;
     }
 
-    @include desktop {
+    @include mobile {
+      font-size: 14px;
     }
   }
 

@@ -6,8 +6,12 @@
   border-radius: 60px 60px 0 0;
   background-color: #ffffff;
 
-  @include laptop {
-    border-radius: 40px 40px 0 0;
+  @include desktopmd {
+    border-radius: 32px 32px 0 0;
+  }
+
+  @include mobile {
+    border-radius: 20px 20px 0 0;
   }
 
   &_bg {

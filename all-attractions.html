@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Республика Алтай</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <a class="header__logo-link" href="./">
+              <img class="header__logo-link-image" src="./assets/logo.webp" alt="logo" />
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <div class="header__nav-wrapper">
+              <ul class="header__nav-menu">
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="./codex.html">Кодекс туриста</a>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="./history.html">О Республике</a>
+
+                  <ul class="header__nav-submenu">
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">О Республике</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">О Республике</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">О Республике</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="#">Туризм</a>
+
+                  <ul class="header__nav-submenu">
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">Туризм</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">Туризм</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">Туризм</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="#">Помощь</a>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+
+              <div class="header__nav-controls">
+                <div class="header__nav-controls-view">
+                  <button class="header__nav-controls-view-button"></button>
+                </div>
+
+                <div class="header__nav-controls-lang">
+                  <span class="header__nav-controls-lang-current">RU</span>
+                  <a class="header__nav-controls-lang-link" href="#">EN</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header__controls">
+            <div class="header__controls-view">
+              <button class="header__controls-view-button"></button>
+            </div>
+
+            <div class="header__controls-lang">
+              <span class="header__controls-lang-current">RU</span>
+              <a class="header__controls-lang-link" href="#">EN</a>
+            </div>
+          </div>
+
+          <div class="header__burger">
+            <button class="header__burger-button"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-heading">
+      <div class="container">
+        <div class="page-heading__content">
+          <h1 class="page-heading__title h1">
+            Алтай <br />
+            уникальный
+          </h1>
+
+          <figure class="page-heading__icon">
+            <img
+              class="page-heading__icon-image"
+              src="./assets/attractions-icon.svg"
+              alt="attractions"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <figure class="page-heading__bg">
+        <img class="page-heading__bg-image" src="./assets/all-attractions-bg.jpg" alt="bg" />
+      </figure>
+    </section>
+
+    <main class="main">
+      <section class="all-attractions">
+        <div class="container">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a class="breadcrumbs__link" href="./">Главная</a>
+              <a class="breadcrumbs__link" href="./">О Республике</a>
+              <span class="breadcrumbs__current">Все достопримечательности</span>
+            </div>
+          </div>
+
+          <div class="all-attractions__wrapper">
+            <div class="all-attractions__search">
+              <div class="all-attractions__search-item">
+                <div class="all-attractions__search-item-label">Выберите район:</div>
+
+                <div class="custom-select" data-value="0">
+                  <select id="attractionArea" name="attractionArea">
+                    <option value="0">Lorem ipsum</option>
+                    <option value="1">Dolor sit amet</option>
+                    <option value="2">Consectetur</option>
+                    <option value="3">Adipisicing</option>
+                    <option value="4">Temporibus</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="all-attractions__search-item">
+                <div class="all-attractions__search-item-label">Выберите тип:</div>
+
+                <div class="custom-select" data-value="0">
+                  <select id="attractionType" name="attractionType">
+                    <option value="0">Lorem ipsum</option>
+                    <option value="1">Dolor sit amet</option>
+                    <option value="2">Consectetur</option>
+                    <option value="3">Adipisicing</option>
+                    <option value="4">Temporibus</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="all-attractions__search-buttons">
+                <button
+                  class="all-attractions__search-button all-attractions__search-button_search"
+                >
+                  Найти
+                </button>
+                <button class="all-attractions__search-button all-attractions__search-button_reset">
+                  Сброс
+                </button>
+              </div>
+            </div>
+
+            <div class="all-attractions__content">
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Городской парк культуры и отдыха</h3>
+                  <div class="all-attractions__card-info-text">
+                    Находится на берегу реки Майма сразу за городским Домом культуры. В самой
+                    живописной зоне на территории городского парка открыт детский игровой комплекс
+                    «Сказочная страна».На площадке имеются разнообразные качели, карусели,
+                    игрушечный замок с лестницами и горками.Для ребят постарше оборудовано место для
+                    катания на роликах, занятий скейтбордом и велотриалом. Для детей с ограниченными
+                    возможностями отведена специализированная зона отдыха.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-1.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">
+                    Центральный сквер культуры и отдыха
+                  </h3>
+                  <div class="all-attractions__card-info-text">
+                    Центральный сквер культуры и отдыха - ботанический сад в миниатюре,
+                    располагается рядом с площадью имени В.И . Ленин. Заложен в 1935-1936 гг.К
+                    85-летию Горно-Алтайска проведена реконструкция Центрального сквера
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-2.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Сквер имени Г.И. Чорос-Гуркина</h3>
+                  <div class="all-attractions__card-info-text">
+                    Расположен возле здания Государственного собрания Эл-Курултай Республики Алтай.
+                    В дни массовых праздников в сквере имени Г.И. Чорос-Гуркина проводятся
+                    многочисленные выставки, проходят выступления народных коллективов В 2006 году в
+                    сквере был установлен памятник алтайскому художнику и общественному деятелю
+                    Григорию Ивановичу Чорос-Гуркину.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-3.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Сквер камней</h3>
+                  <div class="all-attractions__card-info-text">
+                    Расположен на Коммунистическом проспекте. Главная идея сквера - показать
+                    удивительную природу Алтая с его горами, реками, озерами, растениями. В
+                    центральной части расположен холм - символ горной местности Республики Алтай. На
+                    вершине холма - композиция из трех камней, символизирующая главную гору Алтая
+                    Белуху. У подножия камней-гор расположился бассейн - это - Телецкое озеро.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-4.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Площадь имени В.И. Ленина</h3>
+                  <div class="all-attractions__card-info-text">
+                    Центральная и самая большая площадь в городе – 5 283 м2. Находится в самом
+                    центре столицы и является местом проведения всех значимых городских и
+                    республиканских мероприятий: национальных праздников, Дня города, Дня Победы,
+                    Дня молодёжи и других .
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-5.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Сквер имени Н.У. Улагашева</h3>
+                  <div class="all-attractions__card-info-text">
+                    Небольшая зеленая зона в самом центре города на пересечении проспекта
+                    Коммунистического с улицей В.И. Чаптынова. В сквере установлен бюст Н.У.
+                    Улагашеву - выдающемуся алтайскому сказителю-кайчи.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-6.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Сквер семьи</h3>
+                  <div class="all-attractions__card-info-text">
+                    Сквер семьи открыли в 2017 году в Горно-Алтайске в рамках проекта «Формирование
+                    комфортной городской среды». В центре сквера растет дуб – символ семейного
+                    благополучия, любви, верности и долголетия. Площадка оборудована для проведения
+                    концертов, массовых мероприятий, вымощенными брусчаткой дорожками, необычными
+                    коваными скамейками.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-7.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Гора Тугая</h3>
+                  <div class="all-attractions__card-info-text">
+                    Гора Тугая представляет собой один из северных отрогов хребта Иолго, поднимается
+                    над Горно-Алтайском на правом берегу Маймы, практически, в центре города, и
+                    запирает с севера межгорную котловину, в которой расположился Горно-Алтайск.
+                    Высота горы Тугая составляет 641 м над уровнем моря. 30 декабря 2019 года была
+                    открыта смотровая площадка в рамках реализации первого этапа проекта
+                    «Благоустройство панорамного парка «Гора Туугая».
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-8.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Гора Комсомольская</h3>
+                  <div class="all-attractions__card-info-text">
+                    Гора Комсомольская является одним из отрогов хребта Иолго. Расположена она на
+                    юго-западной стороне Горно-Алтайска, в пяти минутах ходьбы от центра города,
+                    возвышаясь над ним на 428 м, и видна с любой улицы города. На северном,
+                    обращенном к городу склоне расположена горнолыжная трасса. Спуск имеет
+                    протяженность около 450 метров при перепаде высот 140 метров.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-9.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Родники</h3>
+                  <div class="all-attractions__card-info-text">
+                    Облагороженные родники располагаются недалеко от Национального театра драмы и на
+                    проспекте Коммунистическом, возле стадиона «Динамо», который украшает
+                    скульптурная композиция «Аленушка и Ырысту», выполненная известным алтайским
+                    скульптором Павлом Ивановичем Богомоловым - символ дружбы алтайского и русского
+                    народов.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-10.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Свято-Макарьевский храм</h3>
+                  <div class="all-attractions__card-info-text">
+                    Строительство церкви начато в 2004 году, в 2006 году состоялось освящение храма.
+                    В дальнейшем рядом с церковью были построены здания воскресной школы, трапезная,
+                    водосвятная часовня и др. Все здания построены с имитацией древнерусского
+                    деревянного зодчества. Церковь является практически точной копией церкви Николая
+                    Чудотворца в Саввинской слободе близ Звенигорода. www.makarievskiy-hram.ru
+                    Адрес: г. Горно-Алтайск, пр. Коммунистический, 146.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-11.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">
+                    Церковь Покрова Пресвятой Богородицы
+                  </h3>
+                  <div class="all-attractions__card-info-text">
+                    Освящено место строительства церкви было в 1998 году. Церковь примечательна тем,
+                    что находится вблизи того места, где находилась первая церковь города Улала -
+                    Всемилостивого Спаса, снесенная в 1946 году. Строительство нового храма
+                    продолжалось около 7 лет и закончилось в 2004 году. Рядом с церковью планируется
+                    возведение собора. Адрес: г. Горно-Алтайск, ул. Социалистическая,1.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-12.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Церковь Преображения Господня</h3>
+                  <div class="all-attractions__card-info-text">
+                    Преображенская церковь - самый первый храм, построенный в Горном Алтае в
+                    новейшее время. В этом смысле он может считаться правопреемником главного храма
+                    центрального миссионерского стана Всемилостивого Спаса, бывшего некогда в Улале.
+                    В 1994 году была построена крестильная церковь Серафима Саровского, в 2008 -
+                    здание Воскресной школы к двадцатилетию церкви Преображения господня было
+                    проведено обновление храма, благоустроена территория. Адрес: г. Горно-Алтайск,
+                    ул. Матросова, 5.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-13.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">
+                    Часовня во имя Николая Чудотворца Мирликийского
+                  </h3>
+                  <div class="all-attractions__card-info-text">
+                    Силами и средствами православных верующих строится у здания городского
+                    автовокзала новая часовня во имя святителя Николая Чудотворца Инициатива
+                    строительства часовни продиктована желанием возродить существовавшую в России
+                    традицию молитвенного напутствия перед дорогой. Адрес: г. Горно-Алтайск, пр.
+                    Коммунистический, 55
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-14.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Соборная мечеть</h3>
+                  <div class="all-attractions__card-info-text">
+                    Соборная мечеть имени Аскара Зиянурова - молельное помещение официально
+                    зарегистрированной мусульманской общины города Горно-Алтайска, действующей в
+                    составе Духовного управления мусульман Республики Алтай. Большая соборная мечеть
+                    Горно-Алтайска может вместить более трехсот верующих. Рядом с мечетью находится
+                    медресе - воскресная школа для детей и женщин. Адрес: г. Горно-Алтайск, ул.
+                    Промышленная, 5Б.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-15.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+
+              <div class="all-attractions__card">
+                <div class="all-attractions__card-info">
+                  <h3 class="all-attractions__card-info-title">Ак-Бурхан</h3>
+                  <div class="all-attractions__card-info-text">
+                    В 1991 году в Горно-Алтайске было образовано религиозное объединение «Ак-Бурхан»
+                    с целью возрождения алтайской формы бурханизма, сходной с раннетибетской. В
+                    настоящее время для приверженцев буддийской веры построен буддийский центр
+                    «Ак-Бурхан». При курее-дацане проводятся ритуальные практики и богослужения.
+                    Практикующие ламы ведут индивидуальный прием верующих. Адрес: г. Горно-Алтайск,
+                    ул. Чорос-Гуркина, 113/1.
+                  </div>
+                </div>
+
+                <figure class="all-attractions__card-figure">
+                  <img
+                    class="all-attractions__card-figure-image"
+                    src="./assets/all-attractions/all-attractions-16.jpg"
+                    alt="history"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Поддержка</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Оставить обращение</a>
+              </li>
+            </ul>
+
+            <h3 class="footer__nav-title">Контакты</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="mailto:turizm-ra@yandex.ru">
+                  turizm-ra@yandex.ru
+                </a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="tel:+73882244524">
+                  +7 (38822) 4-45-24
+                </a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="tel:+73882244534">
+                  +7 (38822) 4-45-34
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Пользователям</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Кодекс туриста</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Помощь</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Новости</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">О Республике</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#"
+                  >Территориально-административная информация</a
+                >
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Достопримечательности</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">История и культура</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Народные промыслы</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Алтайский язык</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Туризм</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Туры по Алтаю</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Где остановиться?</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Где поесть?</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Для детей</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Туроператоры</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Транспорт</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Календарь событий</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__social">
+          <a class="footer__social-link footer__social-link_tg" href="#"></a>
+          <a class="footer__social-link footer__social-link_vk" href="#"></a>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-logo">
+            <a class="footer__bottom-logo-link" href="#">
+              <img class="footer__bottom-logo-link-image" src="./assets/logo.webp" alt="logo" />
+            </a>
+          </div>
+
+          <a class="footer__bottom-policy" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

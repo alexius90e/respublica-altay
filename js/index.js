@@ -1,3 +1,5 @@
+import './custom-select.js';
+
 const headerBurgerButton = document.querySelector('.header__burger-button');
 const headerNav = document.querySelector('.header__nav');
 
