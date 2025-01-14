@@ -3030,8 +3030,10 @@ img {
 .all-attractions__card-figure-image {
   display: block;
   max-width: 100%;
-  height: auto;
+  aspect-ratio: 247/180;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1024px) {
   .all-attractions__card-figure-image {
