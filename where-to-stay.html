@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Республика Алтай</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <a class="header__logo-link" href="./">
+              <img class="header__logo-link-image" src="./assets/logo.webp" alt="logo" />
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <div class="header__nav-wrapper">
+              <ul class="header__nav-menu">
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="./codex.html">Кодекс туриста</a>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="./history.html">О Республике</a>
+
+                  <ul class="header__nav-submenu">
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">О Республике</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">О Республике</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">О Республике</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="#">Туризм</a>
+
+                  <ul class="header__nav-submenu">
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">Туризм</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">Туризм</a>
+                    </li>
+                    <li class="header__nav-submenu-item">
+                      <a class="header__nav-submenu-item-link" href="#">Туризм</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="#">Помощь</a>
+                </li>
+
+                <li class="header__nav-menu-item">
+                  <a class="header__nav-menu-item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+
+              <div class="header__nav-controls">
+                <div class="header__nav-controls-view">
+                  <button class="header__nav-controls-view-button"></button>
+                </div>
+
+                <div class="header__nav-controls-lang">
+                  <span class="header__nav-controls-lang-current">RU</span>
+                  <a class="header__nav-controls-lang-link" href="#">EN</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="header__controls">
+            <div class="header__controls-view">
+              <button class="header__controls-view-button"></button>
+            </div>
+
+            <div class="header__controls-lang">
+              <span class="header__controls-lang-current">RU</span>
+              <a class="header__controls-lang-link" href="#">EN</a>
+            </div>
+          </div>
+
+          <div class="header__burger">
+            <button class="header__burger-button"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-heading">
+      <div class="container">
+        <div class="page-heading__content">
+          <h1 class="page-heading__title h1">
+            Алтай <br />
+            гостеприимный
+          </h1>
+
+          <figure class="page-heading__icon">
+            <img
+              class="page-heading__icon-image"
+              src="./assets/attractions-icon.svg"
+              alt="attractions"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <figure class="page-heading__bg">
+        <img class="page-heading__bg-image" src="./assets/where-to-stay-bg.jpg" alt="bg" />
+      </figure>
+    </section>
+
+    <main class="main">
+      <section class="where-to-stay">
+        <div class="container">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__content">
+              <a class="breadcrumbs__link" href="./">Главная</a>
+              <a class="breadcrumbs__link" href="./">Туризм</a>
+              <span class="breadcrumbs__current">Где остановиться?</span>
+            </div>
+          </div>
+
+          <div class="where-to-stay__wrapper">
+            <div class="where-to-stay__search">
+              <div class="where-to-stay__search-item">
+                <div class="where-to-stay__search-item-label">Выберите район:</div>
+
+                <div class="custom-select" data-value="0">
+                  <select id="whereToStayArea" name="whereToStayArea">
+                    <option value="0">г. Горно-Алтайск</option>
+                    <option value="1">г. Горно-Алтайск</option>
+                    <option value="2">г. Горно-Алтайск</option>
+                    <option value="3">г. Горно-Алтайск</option>
+                    <option value="4">г. Горно-Алтайск</option>
+                    <option value="5">г. Горно-Алтайск</option>
+                    <option value="6">г. Горно-Алтайск</option>
+                    <option value="7">г. Горно-Алтайск</option>
+                    <option value="8">г. Горно-Алтайск</option>
+                    <option value="9">г. Горно-Алтайск</option>
+                    <option value="10">г. Горно-Алтайск</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="where-to-stay__search-buttons">
+                <button class="where-to-stay__search-button">Найти</button>
+              </div>
+            </div>
+
+            <div class="where-to-stay__content">
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-1.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-2.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-3.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-4.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-5.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-6.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-7.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-8.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-9.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-10.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-11.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="where-to-stay__card">
+                <figure class="where-to-stay__card-figure">
+                  <img
+                    class="where-to-stay__card-figure-image"
+                    src="./assets/where-to-stay/where-to-stay-12.jpg"
+                    alt="where-to-stay"
+                  />
+                </figure>
+
+                <div class="where-to-stay__card-info">
+                  <h3 class="where-to-stay__card-info-title">Вдох, купольный отель</h3>
+                  <div class="where-to-stay__card-info-more">
+                    <a class="where-to-stay__card-info-more-button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-nav">
+            <div class="page-nav__nav">
+              <button class="page-nav__nav-button page-nav__nav-button_prev"></button>
+
+              <div class="page-nav__nav-pages">
+                <button class="page-nav__nav-button">4</button>
+                <button class="page-nav__nav-button">5</button>
+                <button class="page-nav__nav-button active">6</button>
+                <button class="page-nav__nav-button">7</button>
+                <button class="page-nav__nav-button">8</button>
+              </div>
+
+              <button class="page-nav__nav-button page-nav__nav-button_next"></button>
+            </div>
+
+            <div class="page-nav__more">
+              <button class="page-nav__more-button">Показать еще</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Поддержка</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Оставить обращение</a>
+              </li>
+            </ul>
+
+            <h3 class="footer__nav-title">Контакты</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="mailto:turizm-ra@yandex.ru">
+                  turizm-ra@yandex.ru
+                </a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="tel:+73882244524">
+                  +7 (38822) 4-45-24
+                </a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="tel:+73882244534">
+                  +7 (38822) 4-45-34
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Пользователям</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Кодекс туриста</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Помощь</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Новости</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">О Республике</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#"
+                  >Территориально-административная информация</a
+                >
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Достопримечательности</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">История и культура</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Народные промыслы</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Алтайский язык</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Туризм</h3>
+
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Туры по Алтаю</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Где остановиться?</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Где поесть?</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Для детей</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Туроператоры</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Транспорт</a>
+              </li>
+              <li class="footer__nav-menu-item">
+                <a class="footer__nav-menu-item-link" href="#">Календарь событий</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__social">
+          <a class="footer__social-link footer__social-link_tg" href="#"></a>
+          <a class="footer__social-link footer__social-link_vk" href="#"></a>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-logo">
+            <a class="footer__bottom-logo-link" href="#">
+              <img class="footer__bottom-logo-link-image" src="./assets/logo.webp" alt="logo" />
+            </a>
+          </div>
+
+          <a class="footer__bottom-policy" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
