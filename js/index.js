@@ -55,3 +55,36 @@ codexControlsButtons.forEach((button) => {
     }
   });
 });
+
+////
+
+const holidayMenuButtons = document.querySelectorAll('.holidays__menu-button');
+const holidayArticles = document.querySelectorAll('.holidays__content-article');
+const holidaySliders = document.querySelectorAll('.holidays__content-article-slider');
+
+holidayMenuButtons.forEach((button, index) => {
+  button.addEventListener('click', (event) => {
+    holidayMenuButtons.forEach((button) => button.classList.remove('active'));
+    holidayArticles.forEach((article) => article.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    if (holidayArticles[index]) holidayArticles[index].classList.add('active');
+  });
+});
+
+holidaySliders.forEach((slider) => {
+  const swiperEl = slider.querySelector('.swiper');
+  const prevEl = slider.querySelector('.holidays__content-article-slider-controls-prev');
+  const nextEl = slider.querySelector('.holidays__content-article-slider-controls-next');
+
+  if (swiperEl && prevEl && nextEl) {
+    const swiper = new Swiper(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: nextEl,
+        prevEl: prevEl,
+      },
+    });
+  }
+});

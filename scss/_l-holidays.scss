@@ -1,0 +1,293 @@
+.holidays {
+  padding: 100px 0 72px;
+
+  @include laptop {
+    padding: 40px 0 24px;
+  }
+
+  &__title {
+    margin: 49px 0 109px;
+
+    @include laptop {
+      margin: 32px 0 48px;
+    }
+
+    @include mobile {
+      margin: 24px 0 32px;
+    }
+  }
+
+  &__photo {
+    margin: 0 0 80px;
+
+    @include laptop {
+      margin: 0 0 48px;
+    }
+
+    @include mobile {
+      margin: 0 0 32px;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      aspect-ratio: 158 / 60;
+      object-fit: cover;
+      border-radius: 40px;
+
+      @include laptop {
+        border-radius: 20px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include laptop {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__menu {
+    flex: 0 0 380px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+
+    @include laptop {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      flex: 1 1 100%;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    @include mobile {
+      gap: 8px;
+      border-radius: 16px;
+    }
+
+    &-button {
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      color: #1d1d1d;
+      text-align: left;
+      border: none;
+      border-radius: 10px;
+      background-color: rgba($color: #000000, $alpha: 0);
+      transition-property: background-color;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.2s;
+      cursor: pointer;
+
+      @include laptop {
+        flex: 0 0 calc(100% / 2 - 16px / 2);
+        padding: 8px 16px;
+        font-size: 16px;
+        border-radius: 8px;
+      }
+
+      @include mobile {
+        flex: 1 1 100%;
+        font-size: 14px;
+      }
+
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.05);
+      }
+
+      &.active {
+        color: #ffffff;
+        background-color: #db383c;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+
+    @include laptop {
+      flex: 1 1 100%;
+    }
+
+    &-article {
+      display: none;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      color: #1d1d1d;
+
+      @include laptop {
+        font-size: 18px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
+
+      &.active {
+        display: block;
+      }
+
+      & > *:first-child {
+        margin-top: 0;
+      }
+
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+
+      &-slider {
+        position: relative;
+        display: grid;
+        margin: 62px 0 72px;
+
+        @include laptop {
+          margin: 40px 0;
+        }
+
+        @include mobile {
+          margin: 32px 0;
+        }
+
+        & .swiper {
+          max-width: 100%;
+          border-radius: 40px;
+
+          @include laptop {
+            border-radius: 20px;
+          }
+
+          @include mobile {
+            border-radius: 8px;
+          }
+        }
+
+        &-image {
+          display: block;
+          width: 100%;
+          aspect-ratio: 105 / 58;
+          border-radius: 40px;
+          object-fit: cover;
+
+          @include laptop {
+            border-radius: 20px;
+          }
+
+          @include mobile {
+            border-radius: 8px;
+          }
+        }
+
+        &-controls {
+          &-prev,
+          &-next {
+            position: absolute;
+            top: 50%;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            aspect-ratio: 1 / 1;
+            border-radius: 20px;
+            background-color: #ffffff;
+            cursor: pointer;
+
+            @include laptop {
+              width: 40px;
+              border-radius: 12px;
+            }
+
+            @include mobile {
+              width: 30px;
+              border-radius: 8px;
+            }
+
+            &::before {
+              content: '';
+              display: block;
+              width: 50%;
+              aspect-ratio: 2 / 1;
+              background: url(../assets/arrow-prev.svg) center / cover no-repeat;
+            }
+          }
+
+          &-prev {
+            left: 20px;
+
+            @include laptop {
+              left: 16px;
+            }
+
+            @include mobile {
+              left: 12px;
+            }
+          }
+
+          &-next {
+            right: 20px;
+
+            @include laptop {
+              right: 16px;
+            }
+
+            @include mobile {
+              right: 12px;
+            }
+
+            &::before {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+
+      & > p {
+        margin: 0 0 32px;
+
+        @include laptop {
+          margin: 0 0 24px;
+        }
+
+        @include mobile {
+          margin: 0 0 16px;
+        }
+      }
+
+      & > p ~ ul {
+        margin: -32px 0 32px;
+
+        @include laptop {
+          margin: -24px 0 24px;
+        }
+
+        @include mobile {
+          margin: -16px 0 16px;
+        }
+      }
+
+      & ul {
+        margin: 0 0 32px;
+        padding-left: 36px;
+
+        @include laptop {
+          margin: 0 0 24px;
+          padding-left: 26px;
+        }
+
+        @include mobile {
+          margin: 0 0 16px;
+        }
+      }
+    }
+  }
+}
